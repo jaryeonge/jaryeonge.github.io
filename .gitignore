@@ -8,7 +8,6 @@
 _site
 _includes
 _layouts
-_posts
 _sass
 *.gem
 .bundle

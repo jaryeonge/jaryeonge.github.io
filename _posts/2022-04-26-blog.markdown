@@ -1,0 +1,56 @@
+---
+layout: post
+title:  "블로그부터 만들어보자"
+date:   2022-04-26 11:08:00 +0900
+categories: blog
+---
+스타트업에 취업해서 개발자가 된 지 벌써 1년 반이 지났다.
+
+그동안 참 다양한 언어도 배우고 서버 구축도 해보고 새로운 DB, 검색 엔진 등을 접해 보면서 정말 성장 많이 했구나 하고 스스로 느꼈다.
+
+그런데 내가 뭘 했고 어떤 스킬을 가졌고 나 이 정도는 할 줄 알아! 라고 남들에게 어필하는 것은 참 힘든 것 같다.
+
+남들에게 어필하기 위해 내가 익힌 기술들을 포스팅해서 "자 spring security는 이런 식으로 권한 관리를 하면 됩니다." 라든지
+"scikit-learn package를 통해 Randomforest 모델을 훈련시켜보자!"와 같은 글을 쓰는 것은 너무나 지루하고 재미가 없었다.
+
+또한 신입 사원을 뽑을 때 보조 역할이지만 내가 직접 면접관이 되어 지원자들의 포트폴리오를 살펴보는 입장이 되보니
+기술적인 포스팅은 "아 이 사람 그래도 공부는 하는구나" 정도만 느꼈을 뿐 그 이상 그 이하의 메리트는 주지 못했다.
+
+그에 반해 자신의 이야기가 담긴 글들은 눈에 확 들어왔다. 예를 들어 데이터 분석을 할 때 domain knowledge가 얼마나 영향을 끼칠까? 하고
+스스로 고민하는 글을 보며 이 사람이 프로젝트를 하면서 어떤 어려움을 겪고 그것을 어떻게 극복해나갔는지 어렴풋이나마 느낄 수 있었다.
+
+그.래.서 내가 지금까지 개발을 배우고 실무를 진행하면서 느낀 점과 고민했던 부분을 글로 풀어내면 좋겠다라는 생각이 들었다.
+중간중간 기술적인 요소도 살짝 양념을 쳐서 글을 써볼까 한다.
+
+## 블로그 선택
+
+사실 예전에도 블로그를 운영해보려는 시도가 있었다. 그래서 velog, tistory 등등을 써본 적이 있다.
+이번에는 그래도 명색이 개발자인데 git을 좀 더 활용해보자는 취지와 커스터마이징이 원활하다는 장점이 있어
+github blog를 선택했다. 짤막하게나마 github blog 만드는 법을 정리해봤다.
+
+### 기술 포인트! github blog  만들기
+
+1. repository 생성
+   1. repository 이름은 username.github.io 형태로 만든다.
+   2. clone 후 index.html 파일을 만들면 페이지 바로 생성가능
+
+2. Jekyll 설치 후 테마 적용
+   1. Jekyll은 개발환경에 따라 다르므로 [Jekyll 공식 홈페이지][jekyll-home]를 이용한다.
+   2. 설치 후 자신이 원하는 테마를 다운 받아 프로젝트 폴더에 넣는다.
+      1. [jamstackthemes.dev][jamstackthemes.dev]
+      2. [jekyllthemes.org][jekyllthemes.org]
+      3. [jekyllthemes.io][jekyllthemes.io]
+      4. [jekyll-themes.com][jekyll-themes.com]
+3. 로컬 테스트 후 push
+   1. `bundle install`
+   2. `bundle add webrick`
+   * ruby 3.0.0 부터 webrick이 gem 기본 포함 항목에서 빠졌다.
+   3. _config.yml 입맛에 맞게 수정
+   4. `bundle exec jekyll serve`
+   5. 확인 후 git push
+
+[jekyll-home]: https://jekyllrb-ko.github.io/
+[jamstackthemes.dev]: https://jamstackthemes.dev/ssg/jekyll/
+[jekyllthemes.org]: http://jekyllthemes.org/
+[jekyllthemes.io]: https://jekyllthemes.io/
+[jekyll-themes.com]: https://jekyll-themes.com/
