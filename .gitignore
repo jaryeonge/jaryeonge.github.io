@@ -1,7 +1,12 @@
+*.gem
+.bundle
 .sass-cache
-.jekyll-cache
-.jekyll-metadata
+_site
+Gemfile.lock
+.DS_Store
 vendor
+.jekyll-cache
+tags
 
 .idea
-.DS_Store
+_posts/example.markdown
