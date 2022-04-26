@@ -1,12 +1,15 @@
+## MacOS
+*.DS_Store
+
+## IDEA
+.idea
+
+## Jekyll stuff
+_site
 *.gem
 .bundle
 .sass-cache
-_site
 Gemfile.lock
-.DS_Store
 vendor
 .jekyll-cache
 tags
-
-.idea
-_posts/example.markdown
