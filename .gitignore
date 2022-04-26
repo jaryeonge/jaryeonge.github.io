@@ -6,6 +6,10 @@
 
 ## Jekyll stuff
 _site
+_includes
+_layouts
+_posts
+_sass
 *.gem
 .bundle
 .sass-cache
